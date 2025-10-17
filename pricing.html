@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from wpocean.com/html/tf/bunso/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Apr 2025 06:41:29 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,39 +27,33 @@
 </head>
 
 <style>
+    @media (max-width: 991px) {
 
+        /* Target header and all its children */
+        #header,
+        #header .wpo-site-header,
+        #header .wpo-header-style-3,
+        #header nav.navigation,
+        #header .container,
+        #header .row {
+            padding-bottom: -0.8em !important;
+            margin-bottom: -0.8em !important;
+        }
 
+        /* Target the navbar elements */
+        .navbar-collapse,
+        .navigation-holder,
+        .nav.navbar-nav {
+            padding-bottom: -0.8em !important;
+            margin-bottom: -0.8em !important;
+        }
 
-
-
-
-
-@media (max-width: 991px) {
-  /* Target header and all its children */
-  #header, 
-  #header .wpo-site-header,
-  #header .wpo-header-style-3,
-  #header nav.navigation,
-  #header .container,
-  #header .row {
-    padding-bottom: -0.8em !important;
-    margin-bottom: -0.8em !important;
-  }
-  
-  /* Target the navbar elements */
-  .navbar-collapse,
-  .navigation-holder,
-  .nav.navbar-nav {
-    padding-bottom: -0.8em !important;
-    margin-bottom: -0.8em !important;
-  }
-  
-  /* Force any flex containers to not add extra space */
-  .row.align-items-center.w-100 {
-    padding-bottom: -0.8em !important;
-    margin-bottom: -0.8em !important;
-  }
-}
+        /* Force any flex containers to not add extra space */
+        .row.align-items-center.w-100 {
+            padding-bottom: -0.8em !important;
+            margin-bottom: -0.8em !important;
+        }
+    }
 
 
 
@@ -70,6 +65,7 @@
 
 
     @media (max-width: 991px) {
+
         /* Mobile Navigation Styling */
         .navbar-collapse.show,
         .navbar-collapse.collapsing {
@@ -79,32 +75,33 @@
             left: 0;
             width: 300px;
             height: 100vh !important;
-            background-color: #002147; /* Your dark blue color */
+            background-color: #002147;
+            /* Your dark blue color */
             z-index: 9999;
             transition: all 0.3s ease;
             padding: 60px 20px 20px;
             overflow-y: auto;
         }
-        
+
         .navbar-collapse .nav {
             display: block !important;
             width: 100%;
         }
-        
+
         .navbar-collapse .nav-item {
             margin: 10px 0;
             display: block;
             width: 100%;
         }
-        
+
         .navbar-collapse .nav-link {
             color: #fff !important;
             font-size: 16px;
             padding: 10px 0;
             display: block;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .menu-close {
             position: absolute;
             top: 20px;
@@ -115,7 +112,7 @@
             font-size: 20px;
             cursor: pointer;
         }
-        
+
         .open-btn .icon-bar {
             background-color: #333;
             display: block;
@@ -126,102 +123,103 @@
             transition: all 0.3s ease;
         }
     }
-    
-    
-    </style>
-    
-    <body>
-    
-        <!-- start page-wrapper -->
-        <div class="page-wrapper">
-            <!-- start preloader -->
-            <div class="preloader">
-                <div class="vertical-centered-box">
-                    <div class="content">
-                        <div class="loader-circle"></div>
-                        <div class="loader-line-mask">
-                            <div class="loader-line"></div>
-                        </div>
-                        <!-- <img src="assets/images/dura-logo.jpg" alt=""> -->
+</style>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
                     </div>
+                    <!-- <img src="assets/images/dura-logo.jpg" alt=""> -->
                 </div>
             </div>
-<!-- Start header -->
-<header id="header" style="box-shadow: #f7f4f4 2px 2px 2px 2px;" >
-    <!-- end topbar -->
-    <div class="wpo-site-header wpo-header-style-3">
-        <nav class="navigation navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <div class="row align-items-center w-100">
-                    <!-- Mobile Menu Toggle -->
-                    <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
-                        <div class="mobail-menu">
-                            <button type="button" class="navbar-toggler open-btn" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar first-angle"></span>
-                                <span class="icon-bar middle-angle"></span>
-                                <span class="icon-bar last-angle"></span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- Logo -->
-                    <div class="col-lg-2 col-md-5 col-6" >
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/dura-logo.jpg" alt="logo" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Navigation -->
-                 
-                    <div class="col-lg-9 col-md-1 col-1">
-                        <div id="navbar" class="collapse navbar-collapse navigation-holder">
-                            <button class="menu-close"><i class="ti-close"></i></button>
-                            <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About Us</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="repair.html">Repairs</a></li>
+        </div>
+        <!-- Start header -->
+        <header id="header" style="box-shadow: #f7f4f4 2px 2px 2px 2px;">
+            <!-- end topbar -->
+            <div class="wpo-site-header wpo-header-style-3">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="row align-items-center w-100">
+                            <!-- Mobile Menu Toggle -->
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn" data-bs-toggle="collapse"
+                                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
 
-                                <li class="nav-item"><a  class="nav-link"href="claim.html"> Make a Claim</a></li>
+                            <!-- Logo -->
+                            <div class="col-lg-2 col-md-5 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="assets/images/dura-logo.jpg" alt="logo" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
 
-                       
+                            <!-- Navigation -->
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">Our Plans</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div><!-- end of nav-collapse -->
-                    </div>
+                            <div class="col-lg-9 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">About Us</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="repair.html">Repairs</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="claim.html"> Make a Claim</a>
+                                        </li>
 
 
 
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pricing.html">Our Plans</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- end of nav-collapse -->
+                            </div>
 
-                    
-                    <!-- Contact Button -->
-                    <div class="col-lg-1 col-md-1 col-1">
-                        <div class="header-right">
-                            <div class="close-form">
-                                <a class="theme-btn" href="contact.html">
-                                    <i class="fi flaticon-phone-call-1"></i>
-                                </a>
+
+
+
+
+                            <!-- Contact Button -->
+                            <div class="col-lg-1 col-md-1 col-1">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn" href="contact.html">
+                                            <i class="fi flaticon-phone-call-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div><!-- end of container -->
-        </nav>
-    </div>
-</header>
-<!-- end of header -->
+                    </div><!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
 
 
         <!-- start wpo-page-title -->
@@ -253,37 +251,111 @@
                             <h2>Pricing Plan</h2>
                         </div>
                         <div class="alert alert-info">
-                            <small style="text-align: left;">After subscription you'll get a welcome email and our lead engineer will contact you to inspect if your home/building/structure is eligible with our plan (All plumbing should be in good condition to be eligible with our insurance plan)
-   -All plans are applicable to 1 - 8 bathroom/toilets for residential and 1 - 6 bathroom/toilets for commercial and doesn't include hotels/schools/estates 
-   - Commercial plans are restricted to offices and restaurants/fastfood/eateries
-   - If you need a plan for an Hotels/schools/estates or desire a plan from 1 - infinite bathrooms plz  call us to schedule a meeting</small>
+                            <small style="text-align: left;">After subscription you'll get a welcome email and our lead
+                                engineer will contact you to inspect if your home/building/structure is eligible with
+                                our plan (All plumbing should be in good condition to be eligible with our insurance
+                                plan)
+                                -All plans are applicable to 1 - 8 bathroom/toilets for residential and 1 - 6
+                                bathroom/toilets for commercial and doesn't include hotels/schools/estates
+                                - Commercial plans are restricted to offices and restaurants/fastfood/eateries
+                                - If you need a plan for an Hotels/schools/estates or desire a plan from 1 - infinite
+                                bathrooms plz call us to schedule a meeting</small>
                         </div>
                     </div>
                 </div>
                 <div class="wpo-pricing-wrap">
                     <div class="row">
-                        <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-lg-4 col-md-6 col-12 py-5">
                             <div class="wpo-pricing-item">
                                 <div class="wpo-pricing-top">
                                     <div class="pricing-thumb">
-                                        <span>Basic</span>
+                                        <span>Basic Plumbing Fittings – Plan 1: 1–2 Bathrooms</span>
                                     </div>
                                     <div class="wpo-pricing-text">
-                                        <h2>₦15,000<span>/per m²</span></h2>
+                                        <h2>₦5,000 <span>/per m,</span></h2>
+                                        <small>Discounted Annual Fee: ₦54,000</small>
                                         <p>Basic Pipe Protection</p>
                                     </div>
                                 </div>
                                 <div class="wpo-pricing-bottom">
                                     <div class="wpo-pricing-bottom-text">
                                         <ul>
-                                            <li>12 visits for repairs/year</li>
+                                            <li>15 visits for repairs per year</li>
                                             <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Modern interior planning</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Free replacements for Basic plumbing components up to 100k</li>
+                                            <li>Free replacements for Basic plumbing components up to 60k</li>
+                                            <li>Custom pricing for upgrades</li>
                                         </ul>
-                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittingsPlan12Bathrooms"
+                                            class="theme-btn">Pay Monthly</a>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittings12Bathroomsannual"
+                                            class="theme-btn">Pay Yearly</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-4 col-md-6 col-12 py-5">
+                            <div class="wpo-pricing-item">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Basic Plumbing Fittings – Plan 2: 3–4 Bathrooms</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>₦10,000 <span>/per m²</span></h2>
+                                        <small>Discounted Annual Fee: ₦108,000</small>
+                                        <p>Basic Pipe Protection</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>15 visits for repairs per year</li>
+                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
+                                            <li>Monthly plumbing inspection</li>
+                                            <li>Modern interior planning</li>
+                                            <li>Priority scheduling for emergency repairs</li>
+                                            <li>Free replacements for Basic plumbing components up to 60k</li>
+                                            <li>Custom pricing for upgrades</li>
+                                        </ul>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittingsPlan34Bathrooms"
+                                            class="theme-btn">Pay monthly</a>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittings34Bathroomsannual"
+                                            class="theme-btn">Pay yearly</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="col col-lg-4 col-md-6 col-12 py-5">
+                            <div class="wpo-pricing-item">
+                                <div class="wpo-pricing-top">
+                                    <div class="pricing-thumb">
+                                        <span>Basic Plumbing Fittings – Plan 3: 4–6 Bathrooms</span>
+                                    </div>
+                                    <div class="wpo-pricing-text">
+                                        <h2>₦15,000 <span>/per m²</span></h2>
+                                        <small>Discounted Annual Fee: ₦162,000</small>
+                                        <p>Standard Plumbing Fittings</p>
+                                    </div>
+                                </div>
+                                <div class="wpo-pricing-bottom">
+                                    <div class="wpo-pricing-bottom-text">
+                                        <ul>
+                                            <li>15 visits for repairs per year</li>
+                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
+                                            <li>Monthly plumbing inspection</li>
+                                            <li>Modern interior planning</li>
+                                            <li>Priority scheduling for emergency repairs</li>
+                                            <li>Free replacements for Basic plumbing components up to 60k</li>
+                                            <li>Custom pricing for upgrades</li>
+                                        </ul>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittingsPlan56Bathrooms"
+                                            class="theme-btn">Pay monthly</a>
+                                        <a href="https://paystack.shop/pay/BasicPlumbingFittings56Bathroomsannual"
+                                            class="theme-btn">Pay yearly</a>
                                     </div>
                                 </div>
                             </div>
@@ -292,48 +364,25 @@
                             <div class="wpo-pricing-item">
                                 <div class="wpo-pricing-top">
                                     <div class="pricing-thumb">
-                                        <span>Premium - (residential)</span>
+                                        <span>Basic Plumbing Fittings – Plan 3: 4–6 Bathrooms</span>
                                     </div>
                                     <div class="wpo-pricing-text">
-                                        <h2>₦20,000<span>/per m²</span></h2>
-                                        <p>Essential Pipe Protection (residential)</p>
+                                        <h2>₦15,000 <span>/per m²</span></h2>
+                                        <small>Discounted Annual Fee: ₦162,000</small>
+                                        <p>Standard Plumbing Fittings</p>
                                     </div>
                                 </div>
                                 <div class="wpo-pricing-bottom">
                                     <div class="wpo-pricing-bottom-text">
                                         <ul>
-                                            <li>15 visits for repairs/year</li>
+                                            <li>15 visits for repairs per year</li>
                                             <li> Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
-                                            <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
                                             <li>Kitchen design</li>
-                                            <li>Free replacements for Basic plumbing components up to 130k</li>
-                                        </ul>
-                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          <div class="col col-lg-4 col-md-6 col-12">
-                            <div class="wpo-pricing-item">
-                                <div class="wpo-pricing-top">
-                                    <div class="pricing-thumb">
-                                        <span>Premium - (commercial)</span>
-                                    </div>
-                                    <div class="wpo-pricing-text">
-                                        <h2>₦25,000<span>/per m²</span></h2>
-                                        <p>Essential Pipe Protection (commercial)</p>
-                                    </div>
-                                </div>
-                                <div class="wpo-pricing-bottom">
-                                    <div class="wpo-pricing-bottom-text">
-                                        <ul>
-                                            <li>15 visits for repairs/year</li>
-                                            <li> Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
+                                            <li>Monthly plumbing inspection</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Kitchen design</li>
-                                            <li>Free replacements for Basic plumbing components up to 180k</li>
+                                            <li>Free replacements of plumbing components up to ₦60,000</li>
                                         </ul>
                                         <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
                                     </div>
@@ -358,14 +407,15 @@
                                             <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Free replacements for major plumbing components up to ₦200,000/visit</li>
+                                            <li>Free replacements for major plumbing components up to ₦200,000/visit
+                                            </li>
                                         </ul>
-                                        <a href="pricing.html" class="theme-btn" >CHOOSE PLAN</a>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-pricing-item">
                                 <div class="wpo-pricing-top">
                                     <div class="pricing-thumb">
@@ -383,14 +433,15 @@
                                             <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM)</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Free replacements for major plumbing components up to ₦350,000/visit</li>
+                                            <li>Free replacements for major plumbing components up to ₦350,000/visit
+                                            </li>
                                         </ul>
-                                        <a href="pricing.html" class="theme-btn" >CHOOSE PLAN</a>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                          <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-pricing-item">
                                 <div class="wpo-pricing-top">
                                     <div class="pricing-thumb">
@@ -405,17 +456,19 @@
                                     <div class="wpo-pricing-bottom-text">
                                         <ul>
                                             <li>Unlimited visits for repairs/year</li>
-                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM) <br>  Saturdays (2 PM - 4 PM)</li>
+                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM) <br> Saturdays (2 PM -
+                                                4 PM)</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Free replacements for major plumbing components up to ₦350,000/visit</li>
+                                            <li>Free replacements for major plumbing components up to ₦350,000/visit
+                                            </li>
                                         </ul>
-                                        <a href="pricing.html" class="theme-btn" >CHOOSE PLAN</a>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                           <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-pricing-item">
                                 <div class="wpo-pricing-top">
                                     <div class="pricing-thumb">
@@ -430,12 +483,14 @@
                                     <div class="wpo-pricing-bottom-text">
                                         <ul>
                                             <li>Unlimited visits for repairs/year</li>
-                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM) <br>  Saturdays (2 PM - 4 PM)</li>
+                                            <li>Weekday prime support <br> (Mon -Fri 9 AM - 6 PM) <br> Saturdays (2 PM -
+                                                4 PM)</li>
                                             <li>Monthly plumbing inspection</li>
                                             <li>Priority scheduling for emergency repairs</li>
-                                            <li>Free replacements for major plumbing components up to ₦700,000/visit</li>
+                                            <li>Free replacements for major plumbing components up to ₦700,000/visit
+                                            </li>
                                         </ul>
-                                        <a href="pricing.html" class="theme-btn" >CHOOSE PLAN</a>
+                                        <a href="pricing.html" class="theme-btn">CHOOSE PLAN</a>
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +554,7 @@
                                     <h3>All Services:</h3>
                                 </div>
                                 <ul>
-                                    <li><a href=""> Pipe Installatio</a></li>
+                                    <li><a href=""> Pipe Installation</a></li>
                                     <li><a href="">Leak Detection</a></li>
                                     <li><a href="">Emergency Plumbing</a></li>
                                     <li><a href="">Civil Engineering</a></li>
@@ -520,7 +575,7 @@
                                     <!-- <li>E-mail: bunso@gmail.com</li>
                                     <li>Website: www.bunso.com</li> -->
                                 </ul>
-                                <!-- --> 
+                                <!-- -->
                             </div>
                         </div>
                         <!-- <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
@@ -613,4 +668,5 @@
 
 
 <!-- Mirrored from wpocean.com/html/tf/bunso/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Apr 2025 06:41:39 GMT -->
+
 </html>
